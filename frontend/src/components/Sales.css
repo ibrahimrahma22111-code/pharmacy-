@@ -1,0 +1,403 @@
+.sales {
+  padding: 30px;
+}
+
+.sales-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.sales-header h1 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.sales-header p {
+  color: #666;
+  font-size: 14px;
+}
+
+.sales-table-container {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sales-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.sales-table thead {
+  background: #f5f7fa;
+}
+
+.sales-table th {
+  padding: 16px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.sales-table td {
+  padding: 16px;
+  border-top: 1px solid #e0e0e0;
+  font-size: 14px;
+  color: #333;
+}
+
+.sales-table tr:hover {
+  background: #f9fafb;
+}
+
+.btn-view {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background: #e6f3ff;
+  color: #667eea;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.btn-view:hover {
+  background: #667eea;
+  color: white;
+}
+
+.sales-loading {
+  padding: 30px;
+  text-align: center;
+  color: #666;
+}
+
+.modal-content.large {
+  max-width: 1000px;
+  max-height: 90vh;
+}
+
+.sale-modal-body {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  padding: 25px;
+  max-height: calc(90vh - 100px);
+  overflow-y: auto;
+}
+
+.sale-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.medicines-list h3 {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.medicines-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.medicine-card {
+  background: #f5f7fa;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.medicine-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.medicine-name {
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.medicine-details {
+  display: flex;
+  gap: 10px;
+  font-size: 12px;
+  color: #666;
+}
+
+.btn-add {
+  padding: 6px 12px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.btn-add:hover:not(:disabled) {
+  background: #5568d3;
+}
+
+.btn-add:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.sale-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cart-section {
+  background: #f5f7fa;
+  border-radius: 8px;
+  padding: 15px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-section h3 {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.empty-cart {
+  text-align: center;
+  color: #999;
+  padding: 40px 20px;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.cart-item {
+  background: white;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cart-item-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-item-name {
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+}
+
+.cart-item-price {
+  font-size: 12px;
+  color: #666;
+}
+
+.cart-item-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.qty-btn {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #e0e0e0;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qty-btn:hover {
+  background: #f5f7fa;
+}
+
+.qty-value {
+  min-width: 30px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.btn-remove {
+  padding: 4px 8px;
+  background: #fee;
+  color: #f56565;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  margin-left: auto;
+}
+
+.btn-remove:hover {
+  background: #fdd;
+}
+
+.cart-item-total {
+  text-align: right;
+  font-weight: 600;
+  color: #667eea;
+  font-size: 14px;
+}
+
+.checkout-section {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  border: 2px solid #e0e0e0;
+}
+
+.total-amount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 2px solid #e0e0e0;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+}
+
+.btn-checkout {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s;
+  margin-top: 15px;
+}
+
+.btn-checkout:hover:not(:disabled) {
+  transform: translateY(-2px);
+}
+
+.btn-checkout:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.sale-details {
+  padding: 25px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.detail-row span:first-child {
+  font-weight: 600;
+  color: #666;
+}
+
+.detail-row span:last-child {
+  color: #333;
+}
+
+.sale-details h3 {
+  margin: 20px 0 15px;
+  color: #333;
+}
+
+.details-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.details-table th {
+  background: #f5f7fa;
+  padding: 12px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.details-table td {
+  padding: 12px;
+  border-top: 1px solid #e0e0e0;
+  font-size: 14px;
+  color: #333;
+}
+
+.details-table tfoot {
+  border-top: 2px solid #e0e0e0;
+}
+
+.details-table tfoot td {
+  padding: 15px 12px;
+  font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+  .sale-modal-body {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .sales {
+    padding: 20px;
+  }
+
+  .sales-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .medicines-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
